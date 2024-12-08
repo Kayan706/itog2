@@ -170,41 +170,6 @@
                         </p>
                     </div>
                 </article>
-                <article class="content">
-                    <img class="img-content" src="https://github.com/netology-code/html-2-diploma/blob/master/sources/images/last-post6.jpg?raw=true" alt="Горы">
-                    <div class="content-text">
-                        <ul class="tag-content">
-                            <li><a class="travel" href="#0">travel</a></li>
-                            <li><a class="lifestyle" href="#0">lifestyle</a></li>
-                        </ul>
-                        <h3><a href="#0">Как первый раз отправиться в горы?</a></h3>
-                        <div class="publication">
-                            <time datetime="2019-07-10">10 июня 2019</time>
-                            <cite>Неизвестный автор</cite>
-                        </div>
-                        <p>
-                            Для начала нужно определиться, в каком формате пройдёт ваше путешествие. Это зависит от многих факторов, не только от ваших желаний и интересов.
-                        </p>
-                    </div>
-                </article>
-                <article class="content">
-                    <img class="img-content" src="https://github.com/netology-code/html-2-diploma/blob/master/sources/images/last-post4.jpg?raw=true" alt="Стол с едой">
-                    <div class="content-text">
-                        <ul class="tag-content">
-                            <li><a class="lifestyle" href="#0">lifestyle</a></li>
-                            <li><a class="food" href="#0">food</a></li>
-                        </ul>
-                        <h3><a href="#0">Наукоёмкий подход к кулинарии</a></h3>
-                        <div class="publication">
-                            <time datetime="2019-07-10">10 июня 2019</time>
-                            <cite>Неизвестный автор</cite>
-                        </div>
-                        <p>
-                            Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.
-                        </p>
-                    </div>
-                </article>
-
             </main>
             <aside class="aside-content">
                 <section class="new-post">
@@ -306,41 +271,71 @@
         <h2 class="heading-shop">Наши изделия</h2>
         <div class="shop">
             <article class="shop-card">
-                <img class="img-shop" src="/img/shop-item-tablet1.jpg" alt="">
+                <picture>
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="/img/shop-item-mobile1.jpg"
+                    >
+                    <source
+                    media="(max-width: 1200px)"
+                    srcset="/img/shop-item-tablet1.jpg"
+                    >
+                    <img class="img-shop" src="/img/shop-item-desk1.jpg" alt="">
+                </picture>
                 <div class="shop-text">
                     <h3 class="title-product">Подушки на диван</h3>
                     <p class="shop-description">Набор из двух подушек с модными принтами. Видео о создании <a href="#">здес</a>.</p>
                     <div class="offer">
                         <div class="price">
-                            <p>500₽</p>
-                            <b>400₽</b>
+                            <span>1000 ₽</span>
+                            <b>800 ₽</b>
                         </div>
                         <button class="in-shop" type="button"> В магазин</button>
                     </div>
                 </div>
             </article>
             <article class="shop-card">
-                <img class="img-shop" src="/img/shop-item-mobile2.jpg" alt="">
+                <picture>
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="/img/shop-item-mobile2.jpg"
+                    >
+                    <source
+                    media="(max-width: 1200px)"
+                    srcset="/img/shop-item-tablet2.jpg"
+                    >
+                    <img class="img-shop" src="/img/shop-item-desk2.jpg" alt="">
+                </picture>
                 <div class="shop-text">
                     <h3 class="title-product">Кукла «Зайчик»</h3>
                     <p class="shop-description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#">весенняя серия постов</a> в блоге и несколько подкастов.</p>
                     <div class="offer">
                         <div class="price">
-                            <b>3500₽</b>
+                            <b>3500 ₽</b>
                         </div>
                         <button class="in-shop" type="button"> В магазин</button>
                     </div>
                 </div>
             </article>
             <article class="shop-card">
-                <img class="img-shop" src="/img/shop-item-mobile3.jpg" alt="">
+                <picture>
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="/img/shop-item-mobile3.jpg"
+                    >
+                    <source
+                    media="(max-width: 1200px)"
+                    srcset="/img/shop-item-tablet3.jpg"
+                    >
+                    <img class="img-shop" src="/img/shop-item-desk3.jpg" alt="">
+                </picture>
                 <div class="shop-text">
                     <h3 class="title-product">Шестиугольная рамка</h3>
                     <p class="shop-description">Необычная рамка для украшения дома из видео <a href="#" >«Как сделать рамку из подручных средств за 30 минут»</a></p>
                     <div class="offer">
                         <div class="price">
-                            <p>500₽</p>
-                            <b>400₽</b>
+                            <span>500 ₽</span>
+                            <b>400 ₽</b>
                         </div>
                         <button class="in-shop" type="button"> В магазин</button>
                     </div>
