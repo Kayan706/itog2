@@ -26,10 +26,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
-    background-color: black;
-
-    
-    
+    background-color: black; 
 }
 
 .header::after {
@@ -171,9 +168,7 @@
 }
 .trends {
     margin-top: 59px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
 }
 .trends-lable{
     font-size: 20px;
@@ -200,6 +195,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-auto-flow: row;
     gap: 4px;
+    overflow: hidden;
 }
 
 .trends-card {
@@ -1020,6 +1016,9 @@ footer {
         width: 158px;
         padding-left: 10px;
     }
+    .menu {
+        display: none;
+    }
     .conteiner {
         min-height: 350px;
         padding-top: 43px;
@@ -1135,11 +1134,219 @@ footer {
     .title-product {
         font-size: 17px;
     }
+
     .footer-content {
-        width: 100%;
+        width: 90%;
         padding: 0;
     }
     .social-network { 
         margin-bottom: 45px;
     }
+    
+}
+
+@media (min-width: 360px) and (max-width: 787px) {
+    .header {
+        background-image: url(/img/banner-mobile.jpg);
+    }
+    .header-menu {
+        padding-top: 197px;
+        display: flex    ;
+        justify-content: center;
+
+    }
+    .logo {
+        width: 270px;
+        padding: 0;
+    }
+    .menu {
+        display: none;
+    }
+    .conteiner {
+        min-height: 610px;
+        padding-top: none;
+    }
+    .header-text{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 35px 10px 0 15px;
+    }
+    .header-text h1 {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .trends-lable {
+        font-size: 16px;
+    }
+    .trends {
+        margin-top: 40px;
+    }
+    .trends-lable{
+        margin-bottom: 37px;
+    }
+    .trends-img {
+        height: 100%;
+    }
+    .text-trends {
+        padding: 34px 24px 24px 18px;
+    }
+    .trends-body{
+        height: 100%;
+        padding: 0px 16px 13px 16px;
+    }
+    .trends-container {
+        grid-template-columns:  1fr;
+        grid-template-rows: repeat(4, 20%);
+        gap:7px;
+    }
+    .text-trends h3>a {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .post-list{
+        margin-top: -160px;
+    }
+    .post-list-conteiner {
+        display: flex;
+        margin: 0 15px;
+        padding: 0;
+        flex-direction: column;
+    }
+    .main-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .tag-content {
+        margin-top: -18px;
+        margin-bottom: -4px;
+    
+    }
+    .content {
+        width: 100%;
+        flex-direction: column;
+        border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+        margin-bottom: 35px;
+    }
+    
+    .content:last-child { 
+        border-bottom: none;
+    }
+
+    .img-content {
+        width: 100%;
+        max-height: 100%;
+        margin: 0 0 20px 0;
+    }
+
+
+    .content-text{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .content-text h3>a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .content-text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .content-text p:not(:first-child) {
+        margin-top: 0;
+    }
+    .aside-content {
+        width:100%;
+    }
+    .new-post h2 {
+        margin-left: 0;
+        font-size: 16px;
+        margin-top: 7px;
+        margin-bottom: 38px;
+    }
+    .search-text {
+        width: 100%;
+        padding-left: 16px;
+    }
+    .search-button {
+        width: 55px;
+    }
+    .new-post {
+        box-sizing: border-box;
+        margin-bottom: 39px;
+    }
+    .mailing h2 {
+        font-size: 17px;
+        margin-left: -2px;
+    }
+    .mailing-text {
+        width: 100%;
+    }
+    .mailing-button {
+        width: 100%;
+    }
+    .mailing {
+        margin-bottom: 40px;
+    }
+    .tag {
+        margin-bottom: -5px;
+    }
+    .tag h2 {
+        font-size: 16px;
+        margin-left: -3px;
+        margin-bottom: 34px;
+    }
+    .themes h2 {
+        font-size: 16px;
+        margin-bottom: 30px;
+        margin-left: -3px;
+    }
+    .publication {
+        display: flex;
+        gap: 9px;
+        line-height: 14px;
+        margin-top: 18px;
+        margin-bottom: 16px;
+    }
+    .shop-section {
+        margin-bottom: 15px;
+    }
+    .shop {
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .heading-shop {
+        margin-top: 29px;
+        margin-bottom: 43px;
+        font-size: 16px;
+    }
+    .shop-card {
+        
+        margin-bottom: 30px;
+    }
+    .img-shop {
+        width: 283px;
+        max-height: 283px;
+    }
+
+
+    .shop-text {
+
+        width: 328px;
+    }
+    .title-product {
+        font-size: 17px;
+    }
+
+    .footer-content {
+        width: 90%;
+        padding: 0;
+    }
+    .social-network { 
+        margin-bottom: 45px;
+    }
+    
 }
