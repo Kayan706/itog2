@@ -20,6 +20,9 @@
                         <li><a class="menu-contacts" href="#0">Контакты</a></li>
                     </ul>
                 </nav>
+                <div class="burger">
+                    <span class="burger-menu"></span>
+                </div>
             </div>
             <div class="header-text">
                 <h1>Блог о творчестве, спорте, и образе жизни</h1>
@@ -29,8 +32,8 @@
     <div class="trends">
         <h2 class="trends-lable">Сейчас в тренде</h2>
         <div class="trends-container">
-            <article class="trends-card">
-                <img class="trends-img" src="/img/trend1.jpg" alt="">
+            <article class="trends-card" style="background-image: url('/img/trend1.jpg');">
+                
                 <div class="trends-body">
                     <div class="text-trends">    
                         <ul class="tag-content">
@@ -41,8 +44,8 @@
                     </div>
                 </div>
             </article>
-            <article class="trends-card">
-                <img class="trends-img" src="/img/trend2.jpg" alt="">
+            <article class="trends-card" style="background-image: url('/img/trend2.jpg');" >
+
                 <div class="trends-body">
                     <div class="text-trends"> 
                         <ul class="tag-content">
@@ -52,8 +55,8 @@
                     </div>
                 </div>
             </article>
-            <article class="trends-card">
-                <img class="trends-img" src="/img/trend3.jpg" alt="">
+            <article class="trends-card" style="background-image: url('/img/trend3.jpg');">
+
                 <div class="trends-body">
                     <div class="text-trends"> 
                         <ul class="tag-content">
@@ -64,8 +67,8 @@
                     </div>
                 </div>
             </article>
-            <article class="trends-card">
-                <img class="trends-img" src="/img/trend4.jpg" alt="">
+            <article class="trends-card" style="background-image: url('/img/trend4.jpg');">
+
                 <div class="trends-body">
                     <div class="text-trends">
                         <ul class="tag-content">
@@ -93,7 +96,7 @@
                             <time datetime="2019-07-10">10 июня 2019</time>
                             <cite>Неизвестный автор</cite>
                         </div>
-                        
+
                         <p>
                             Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?
                         </p>
@@ -388,6 +391,33 @@
             <a class="copyright" href="#0">Copyright © 2009–2019 City Blog LLC.</a>
         </div>
     </footer>
-
+    <div class="pop visually-hidden">
+        <div class="popup-content">
+        <button class="closepop"></button>
+        <h3 class="header-popup">ВАШ ФИДБЕК</h3>
+        <form action="#" class="pop-form">
+            <span class="text-popup">Как часто вы заходите на сайт?</span>
+            <select name="" id="" class="select-group">
+                <option>Почти каждый день</option>
+                <option>Не очень часто</option>
+                <option>Редко</option>
+            </select>
+            <span class="text-popup">Вы подписаны на e-mail рассылку?</span>
+            <div class="check-group">
+                <label class="input-check">
+                    <input type="radio" name="form" class="input-control" checked>
+                    <span class="input-text">Да</span>
+                </label>
+                <label class="input-check">
+                    <input type="radio" name="form" class="input-control">
+                    <span class="input-text">Нет</span>
+                </label>
+            </div>
+            <span  class="text-popup">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea class="offers-popup" name="" id="" placeholder="Может, больше рецептов?"></textarea>
+            <button class="popup-button" type="submit">Отправить</button>
+        </form>
+        </div>
+    </div>
 </body>
 </html>
