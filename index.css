@@ -9,9 +9,9 @@
   font-family: "OpenSans Bold";
   
   src: local(
-    url(/fonts/OpenSans-Bold.woff),
-    url(/fonts/OpenSans-Bold.ttf),
-    url(/fonts/OpenSans-Bold.woff2)
+    url(fonts/OpenSans-Bold.woff),
+    url(fonts/OpenSans-Bold.ttf),
+    url(fonts/OpenSans-Bold.woff2)
   );
   font-weight: 700;
   font-style: bold;
@@ -20,9 +20,9 @@
 @font-face {
   font-family: "OpenSans Regular";
   src:local(
-    url(/fonts/OpenSans-Regular.woff),
-    url(/fonts/OpenSans-Regular.ttf),
-    url(/fonts/OpenSans-Regular.woff2)
+    url(fonts/OpenSans-Regular.woff),
+    url(fonts/OpenSans-Regular.ttf),
+    url(fonts/OpenSans-Regular.woff2)
   );
   
   font-weight: 400;
@@ -31,7 +31,7 @@
 
 .header {
   position: relative;
-  background-image: url(https://github.com/netology-code/html-2-diploma/blob/master/sources/images/banner-bg.jpg?raw=true);
+  background-image: url(img/banner-bg.jpg);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -539,7 +539,7 @@ time {
   background-color: #b59f5b;
   border: none;
   cursor: pointer;
-  background-image: url(/img/search.svg);
+  background-image: url(img/search.svg);
   display: block;
   background-repeat: no-repeat;
   background-position: center center;
@@ -919,7 +919,7 @@ footer {
 
 .closepop {
   position: absolute;
-  background-image: url(/img/form-x.svg);
+  background-image: url(img/form-x.svg);
   background-repeat: no-repeat;
   background-size: 20px;
   width: 18px;
@@ -965,7 +965,7 @@ footer {
 .select-group {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url(/img/form-arrows.svg);
+  background-image: url(img/form-arrows.svg);
   background-size: 10px;
   background-repeat: no-repeat;
   background-position: 96% center;
@@ -998,7 +998,7 @@ footer {
 }
 .input-text::before {
   content: "";
-  background-image: url(/img/form-empty-circle.svg);
+  background-image: url(img/form-empty-circle.svg);
   background-repeat: no-repeat;
   background-size: 19px;
   width: 20px;
@@ -1010,7 +1010,7 @@ footer {
 }
 
 .input-control:checked + .input-text::before {
-  background-image: url(/img/form-circle.svg);
+  background-image: url(img/form-circle.svg);
 }
 .offers-popup {
   font-family: "OpenSans Regular", sans-serif;
@@ -1043,7 +1043,7 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .header {
-    background-image: url(/img/banner-bg-tablet.jpg);
+    background-image: url(img/banner-bg-tablet.jpg);
   }
   .header-menu {
     display: flex;
@@ -1220,7 +1220,7 @@ footer {
 
 @media (min-width: 360px) and (max-width: 767px) {
   .header {
-    background-image: url(/img/banner-mobile.jpg);
+    background-image: url(img/banner-mobile.jpg);
   }
   .header-menu {
     display: flex;
