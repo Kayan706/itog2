@@ -529,7 +529,7 @@
     background-color: #b59f5b;
     border: none;
     cursor: pointer;
-    background-image: url(https://raw.githubusercontent.com/netology-code/html-2-diploma/49254f5a99cc931a884ff9396cab1b1495830519/sources/images/search.svg);
+    background-image: url(/img/search.svg);
     display: block;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1447,4 +1447,9 @@
       margin-bottom: 32px;
     }
   }
-  
+  @media (min-width:641px) and (max-width: 1200px), (orientation: landscape) {
+    .trends-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, minmax(74.1%, 1fr));
+    }
+  }
