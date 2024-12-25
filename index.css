@@ -463,7 +463,7 @@ time {
   display: flex;
 }
 
-.new-post h2 {
+.new-post h3 {
   font-family: "OpenSans Bold", sans-serif;
   font-size: 0.875rem;
   color: #000000;
@@ -471,11 +471,11 @@ time {
   text-align: center;
   position: relative;
   margin-top: -5px;
-  margin-bottom: 41px;
+  margin-bottom: 43px;
   margin-left: 7px;
 }
 
-.new-post h2::before {
+.new-post h3::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -564,7 +564,7 @@ time {
   box-sizing: border-box;
 }
 
-.mailing h2 {
+.mailing h3 {
   font-family: "OpenSans Bold", sans-serif;
   font-size: 0.875rem;
   color: #000000;
@@ -575,7 +575,7 @@ time {
   margin-left: -3px;
 }
 
-.mailing h2::before {
+.mailing h3::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -623,7 +623,7 @@ time {
   margin-bottom: 48px;
 }
 
-.tag h2 {
+.tag h3 {
   font-family: "OpenSans Bold", sans-serif;
   font-size: 0.875rem;
   color: #000000;
@@ -634,7 +634,7 @@ time {
   margin-left: 3px;
 }
 
-.tag h2::before {
+.tag h3::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -669,7 +669,7 @@ time {
   margin-left: 1px;
 }
 
-.themes h2 {
+.themes h3 {
   font-family: "OpenSans Bold", sans-serif;
   font-size: 0.875rem;
   color: #000000;
@@ -680,7 +680,7 @@ time {
   margin-left: 5px;
 }
 
-.themes h2::before {
+.themes h3::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -733,7 +733,7 @@ time {
   left: 50%;
   width: 70px;
   height: 3px;
-  bottom: -10px;
+  bottom: -13px;
   background-color: #e1d9bd;
   transform: translateX(-50%);
 }
@@ -766,7 +766,6 @@ time {
   padding-left: 18px;
   padding-bottom: 25px;
   margin-top: -30px;
-  outline-offset: 1px;
   flex-grow: 1;
 }
 
@@ -1032,7 +1031,7 @@ footer {
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 641px) and (max-width: 1200px) {
   .header {
     background-image: url(img/banner-bg-tablet.jpg);
   }
@@ -1055,9 +1054,10 @@ footer {
   }
 
   .header-text {
-    padding-top: 89px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 100%;
+    padding-top: 90px;
+    padding-left: 70px;
+    padding-right: 70px;
     padding-bottom: 0;
   }
   .header-text h1 {
@@ -1087,6 +1087,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, minmax(70%, 1fr));
     gap: 7px;
+    justify-content: space-between;
   }
   .text-trends h3 > a {
     font-size: 1rem;
@@ -1103,10 +1104,13 @@ footer {
     margin-left: 15px;
     margin-right: 5%;
   }
-
+  
   .tag-content {
     margin-top: -19px;
     margin-bottom: -1px;
+  }
+  .new-post-content {
+    margin-bottom: 21px;
   }
   .content {
     width: 100%;
@@ -1129,7 +1133,7 @@ footer {
     margin-top: 5%;
     margin-bottom: 5%;
   }
-  .content-text h3 > a {
+  .content-text h2 > a {
     font-size: 1.063rem;
     line-height: 22px;
   }
@@ -1137,29 +1141,38 @@ footer {
     margin-bottom: 17px;
   }
   .shop-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 25px;
   }
   .shop {
     width: 90%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: normal;
+    gap: 30px;
+    margin-bottom: 30px;
   }
   .heading-shop {
     margin-top: 1px;
     font-size: 1.125rem;
     margin-bottom: 41px;
   }
+  .shop-picture {
+    width: 100%;
+  }
   .img-shop {
-    width: 291px;
-    max-height: 226px;
+    max-height: none;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
   }
 
-  .shop-card {
-    margin-bottom: 30px;
-  }
   .shop-text {
-    width: 328px;
+    width: 100%;
+    
   }
   .title-product {
     font-size: 1.063rem;
@@ -1210,7 +1223,7 @@ footer {
   }
 }
 
-@media (min-width: 360px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 640px) {
   .header {
     background-image: url(img/banner-mobile.jpg);
   }
@@ -1311,7 +1324,7 @@ footer {
     margin-top: 0;
     margin-bottom: 20px;
   }
-  .content-text h3 > a {
+  .content-text h2 > a {
     font-size: 1rem;
     line-height: 20px;
   }
@@ -1325,11 +1338,11 @@ footer {
   .aside-content {
     width: 100%;
   }
-  .new-post h2 {
+  .new-post h3 {
     margin-left: 0;
     font-size: 1rem;
     margin-top: 7px;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
   }
   .search-text {
     width: 100%;
@@ -1342,7 +1355,7 @@ footer {
     box-sizing: border-box;
     margin-bottom: 39px;
   }
-  .mailing h2 {
+  .mailing h3 {
     font-size: 1.063rem;
     margin-left: -2px;
   }
@@ -1353,21 +1366,25 @@ footer {
     width: 100%;
   }
   .mailing {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
   .tag {
     margin-bottom: -5px;
   }
-  .tag h2 {
+  .tag h3 {
     font-size: 1rem;
     margin-left: -3px;
     margin-bottom: 34px;
   }
-  .themes h2 {
+  .themes h3 {
     font-size: 1rem;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
     margin-left: -3px;
   }
+  .themes-item {
+    margin-bottom: 10px;
+  }
+
   .publication {
     display: flex;
     gap: 9px;
@@ -1376,6 +1393,9 @@ footer {
     margin-bottom: 16px;
   }
   .shop-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 15px;
   }
   .shop {
@@ -1385,20 +1405,26 @@ footer {
     justify-content: center;
   }
   .heading-shop {
-    margin-top: 29px;
+    margin-top: 31px;
     margin-bottom: 43px;
     font-size: 1rem;
   }
   .shop-card {
     margin-bottom: 30px;
   }
+  .shop-picture {
+    width: 100%;
+  }
   .img-shop {
-    width: 283px;
-    max-height: 283px;
+    max-height: none;
+    width: 100%;
+    padding-left: 19px;
+    padding-right: 22px;
+    box-sizing: border-box;
   }
 
   .shop-text {
-    width: 328px;
+    width: 100%;
   }
   .title-product {
     font-size: 1.063rem;
@@ -1452,8 +1478,10 @@ footer {
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
   .trends-container {
     grid-template-columns: repeat(4, 24%);
-
     grid-auto-flow: row;
+  }
+  .text-trends {
+    padding: 39px 3px 26px 5px;
   }
   .text-trends ul {
     display: flex;
